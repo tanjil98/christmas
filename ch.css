@@ -1,0 +1,101 @@
+body {
+  background-color: #151522;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.mainSVG {
+  width: 50%;
+  height: auto;
+}
+
+.box {
+  width: 60%; 
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #cb9866;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+.logo {
+  width: 250px; 
+  height: auto;
+  margin-bottom:2px; 
+}
+
+
+
+.chemistry-message, .chemistry-message-next {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.chemistry-message-next {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white; 
+  animation: typing 2s steps(40, end), blink 0.5s step-end infinite; 
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainSVG {
+    width: 80%;
+  }
+
+  .box {
+    width: 90%;
+  }
+}
